@@ -24,8 +24,8 @@ public class TurnBaseAutoCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	final double visionData = SmartDashboard.getNumber("angleDisplacement", 0.0);	//TODO: change name of property	//2nd argument = default value
-    	tBase.setTargetAngle( Robot.turretBase.getTurretPosition() + visionData );
+    	final double angleDisplacement = SmartDashboard.getNumber("angleDisplacement", 0.0);	//TODO: change name of property	//2nd argument = default value
+    	tBase.setTargetAngle( Robot.turretBase.getTurretPosition() + angleDisplacement );
     	tBase.turnBaseAutonomous();
     }
 
