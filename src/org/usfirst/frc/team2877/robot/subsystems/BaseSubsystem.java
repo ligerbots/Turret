@@ -28,7 +28,7 @@ public class BaseSubsystem extends Subsystem {
 	private final double minTurnAngle = RobotMap.TURN_ANGLE_BUFFER;
 	private final double maxTurnAngle = 360 - RobotMap.TURN_ANGLE_BUFFER;
 	
-	private double targetAngle;
+	private double targetAngle = 0.0;
 	
 	public BaseSubsystem() {
 		motor = new CANTalon(RobotMap.CT_BASE);
